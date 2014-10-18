@@ -1,13 +1,13 @@
 # switchStyler
 
-switch css classes on target divs
+A jQuery plugin to add/remove classes when your divs are on the right target.
 
 ## Getting Started
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.githubusercontent.com/cropcrop/jquery-switchstyler/master/dist/jquery.switchstyler.min.js
-[max]: https://raw.githubusercontent.com/cropcrop/jquery-switchstyler/master/dist/jquery.switchstyler.js
+[min]: https://github.com/cropcrop/jquery-switchstyler/raw/master/dist/jquery.switchstyler.min.js
+[max]: https://github.com/cropcrop/jquery-switchstyler/raw/master/dist/jquery.switchstyler.js
 
 In your web page:
 
@@ -15,8 +15,10 @@ In your web page:
 <script src="jquery.js"></script>
 <script src="dist/switchstyler.min.js"></script>
 <script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
+$('.fixed-element').switchstyler({
+  on: '.target1, .target2',
+  addClass: 'class1 class2',
+  removeClass: 'class3'
 });
 </script>
 ```
