@@ -1,0 +1,28 @@
+{
+  "name": "switchstyler",
+  "title": "switchStyler",
+  "description": "switch css classes on target divs",
+  "version": "",
+  "homepage": "",
+  "author": {
+    "name": "Luca Dimola",
+    "url": "https://github.com/cropcrop"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}

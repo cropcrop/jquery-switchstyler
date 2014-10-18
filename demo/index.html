@@ -1,0 +1,89 @@
+<!-- 
+* switchstyler demo
+* 
+*
+* Copyright (c) 2014 Luca Dimola
+* Licensed under the MIT license.
+*
+* -->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jQuery switchstyler</title>
+  <meta name="description" content="jQuery plugin to add/remove css classes when your divs are on the right target!">
+  <meta name="author" content="Luca Dimola">
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <div class="fixed-container container-example fluid col-1-2">
+    <div class="center-middle">
+      <ul class="top-menu">
+        <li>A JQUERY PLUGIN</li>
+        <li>TO SWITCH</li>
+        <li>CLASSES</li>
+        <li>WHEN YOUR DIVS</li>
+        <li>ARE ON THE</li>
+        <li>RIGHT TARGET</li>
+      </ul>
+    </div>  
+  </div>
+  
+  <div class="fixed-container container-description fluid col-1-2 pull-right">
+    <div class="center-middle">
+      <div class="box">
+        <h1>switchstyler()</h1>
+        <p>Add/Remove css classes when something fixed is hovering your target div(s).</p>
+        <p>As simple as:</p>
+          <code>
+            $('.top-menu li').switchstyler({<br>
+            &nbsp;&nbsp;on: <span class="orange">'.section2, .section3'</span>,<br>
+            &nbsp;&nbsp;addClass: <span class="orange">'newClass1 newClass2'</span>,<br>
+            &nbsp;&nbsp;removeClass: <span class="orange">'oldClass'</span><br>
+            });
+          </code>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="section section1 bg-green"></div>
+  <div class="section section2 bg-dark"></div>
+  <div class="section section3 bg-green"></div>
+  <div class="section section4 bg-dark"></div>
+  
+  
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../src/switchstyler.js"></script>
+  
+  <script>
+    
+    $('ul.top-menu li').switchstyler({ //fixed object
+      on: '.section.bg-dark', //target section
+      addClass: 'transition1', //classes to add e.g. 'class1 class4 class6'
+      removeClass: '' //classes to remove
+    });
+    
+    $('ul.top-menu li').switchstyler({
+      on: '.section3',
+      addClass: 'transition2'
+    });
+    
+    $('ul.top-menu li').switchstyler({
+      on: '.section4',
+      addClass: 'green'
+    });
+
+  </script>
+  
+</body>
+</html>
