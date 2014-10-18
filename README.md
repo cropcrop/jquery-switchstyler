@@ -1,4 +1,4 @@
-# switchStyler
+# switchstyler
 
 A jQuery plugin to add/remove classes when your divs are on the right target.
 

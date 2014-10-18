@@ -12,18 +12,54 @@ height:100%;
 margin:0;
 font-family:'Raleway';
 }
+
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out;
+     -o-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:hover {
+  color: #03C9A9;
+}
+
+/* Box description */
 .box{
 background:#eee;
 background:rgba(238, 238, 238, 0.94);
-padding:25px;
+padding:0;
 width:65%;
 margin:0 auto;
-/*transition*/
 -webkit-transition:all 0.3s ease-in-out;
    -moz-transition:all 0.3s ease-in-out;
      -o-transition:all 0.3s ease-in-out;
         transition:all 0.3s ease-in-out;
 }
+
+.box-content {
+  padding: 25px;
+}
+
+.box-row{
+  background: #ddd;
+  padding: 5px 25px;
+  border-bottom: 1px solid #fefefe;
+  text-align: center;
+-webkit-transition: background 0.2s ease-in-out;
+   -moz-transition: background 0.2s ease-in-out;
+     -o-transition: background 0.2s ease-in-out;
+        transition: background 0.2s ease-in-out;
+}
+
+.box-row:hover {
+  background: #fefefe;
+}
+/* Helpers */
 .pull-right{
 right:0;
 }

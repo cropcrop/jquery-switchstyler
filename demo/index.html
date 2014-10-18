@@ -17,7 +17,11 @@
   <meta name="description" content="jQuery plugin to add/remove css classes when your divs are on the right target!">
   <meta name="author" content="Luca Dimola">
   
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   
 </head>
@@ -40,17 +44,25 @@
   <div class="fixed-container container-description fluid col-1-2 pull-right">
     <div class="center-middle">
       <div class="box">
-        <h1>switchstyler()</h1>
-        <p>Add/Remove css classes when something fixed is hovering your target div(s).</p>
-        <p>As simple as:</p>
-          <code>
-            $('.top-menu li').switchstyler({<br>
-            &nbsp;&nbsp;on: <span class="orange">'.section2, .section3'</span>,<br>
-            &nbsp;&nbsp;addClass: <span class="orange">'newClass1 newClass2'</span>,<br>
-            &nbsp;&nbsp;removeClass: <span class="orange">'oldClass'</span><br>
-            });
-          </code>
-        </p>
+        <div class="box-content">
+          <h1><a href="https://github.com/cropcrop/jquery-switchstyler"https://github.com/cropcrop/jquery-switchstyler><i class="fa fa-github"></i> switchstyler</a></h1>
+          <p>Add/Remove css classes when something fixed is hovering your target div(s). <b>Less than 1kb</b></p>
+          <p>Example</p>
+            <code>
+              $(<span class="orange">'.top-menu li'</span>).switchstyler({<br>
+              &nbsp;&nbsp;on: <span class="orange">'.section2, .section3'</span>,<br>
+              &nbsp;&nbsp;addClass: <span class="orange">'newClass1 newClass2'</span>,<br>
+              &nbsp;&nbsp;removeClass: <span class="orange">'oldClass'</span><br>
+              });
+            </code>
+          </p>
+        </div>
+        <div class="box-row">
+          <p><code>$ bower install switchstyler</code></p>
+        </div>
+        <div class="box-row">
+          <p><a href="https://raw.githubusercontent.com/cropcrop/jquery-switchstyler/master/dist/jquery.switchstyler.min.js">Download switchstyler.min.js <i class="fa fa-github"></i></a></p>
+        </div>
       </div>
     </div>
   </div>

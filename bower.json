@@ -1,11 +1,36 @@
 {
   "name": "switchstyler",
-  "version": "",
+  "description":"A jQuery plugin to add/remove classes when your divs are on the right target",
+  "main": "dist/switchstyler.min.js",
+  "license": "MIT",
+  "authors": [ { "name": "Luca Dimola", "email": "honeaven@gmail.com" } ],
+  "homepage": "https://github.com/cropcrop/jquery-switchstyler",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cropcrop/jquery-switchstyler.git"
+  },
+  "ignore": [
+    "**/.*",
+    "build",
+    "speed",
+    "test",
+    "*.md",
+    "AUTHORS.txt",
+    "Gruntfile.js",
+    "package.json"
+  ],
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "latest"
   },
   "devDependencies": {
     "qunit": "~1.12.0",
     "jquery": "latest"
-  }
+  },
+  "keywords": [
+    "jquery",
+    "library",
+    "color",
+    "css",
+    "switch style"
+  ]
 }
