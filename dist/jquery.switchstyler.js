@@ -1,4 +1,4 @@
-/*! switchstyler - v - 2014-10-18
+/*! switchstyler - v - 2014-11-23
 * https://github.com/cropcrop/switchstyler
 * Copyright (c) 2014 Luca Dimola; Licensed MIT */
 (function ($) {
@@ -7,8 +7,22 @@
 
     var menuItems = $(this);
     var sectionSwitch = $(options.on);
+    
+    $(window).scroll(function() {
+      switchStyler();
+    });
 
-    $(window).scroll(function () {
+    /* hack */
+    $( window ).load(function() {
+      switchStyler();
+      $(window).delay(900).queue(function(next){
+        switchStyler();
+        next();
+      });
+    });
+    
+    function switchStyler() {
+      
       menuItems.each(function () {
         var matchCount = 0;
         var itemMidPoint = $(this).position().top + ($(this).outerHeight(true) / 2);
@@ -26,9 +40,12 @@
           $(this).removeClass(options.addClass).addClass(options.removeClass);
         }
       });
-    });
+      
+    }
 
   };
+  
+  
 
   // Static method.
   $.switchstyler = function (options) {
