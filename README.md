@@ -4,6 +4,9 @@ A jQuery plugin to add/remove classes when your divs are on the right target.
 
 See a live [demo][demo] here!
 
+![Alt text](http://honesign.com/github/jquery-switchstyler/switchstyler.png)
+
+
 ## Getting Started
 
 
@@ -26,12 +29,3 @@ $('.fixed-element').switchstyler({
 });
 </script>
 ```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Release History
-_(Nothing yet)_
