@@ -11,7 +11,7 @@ Download the [production version][min] or the [development version][max].
 
 [min]: https://github.com/cropcrop/jquery-switchstyler/raw/master/dist/jquery.switchstyler.min.js
 [max]: https://github.com/cropcrop/jquery-switchstyler/raw/master/dist/jquery.switchstyler.js
-[demo]: http://cropcrop.github.io/jquery-switchstyler/demo/
+[demo]: http://honesign.com/github/jquery-switchstyler/
 
 In your web page:
 
