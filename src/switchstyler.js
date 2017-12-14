@@ -18,7 +18,7 @@
     });
 
     /* hack */
-    $( window ).load(function() {
+    $(window).on('load', function(){ 
       switchStyler();
       $(window).delay(900).queue(function(next){
         switchStyler();
